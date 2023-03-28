@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+    <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+    <link type="text/css" href='../css/style.css' rel='stylesheet'>
+    <link type="text/css" href='../css/common.css' rel='stylesheet'>
+    
+    <style type="text/css">
+
+    /*    .overlayimg{
+            background: url(../img/faq.png);
+            background-repeat: no-repeat;
+            background-size: 600px auto;
+            background-position-x: 20%;
+        }
+
+        @media screen and (max-width: 600px) {
+          .overlayimg{
+            background-position-x: left;
+            background-size: contain;
+          }
+        }*/
+        .helpcentertab{
+
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-lg" id="toTopBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ----------------navbar------------------------------------- -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand pl-4" href="../index.html">
+     <img src="../img/logo.png" width="60" height="auto" alt="MCQMED Logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center " id="navbarToggler1">
+    <ul class="navbar-nav m-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questions.html">Questions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notes.html">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subscription.html">Subscription</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="navbtn">
+       <form class="form-inline my-2 my-lg-0">
+         <a href="login.html" class="btn my-2 my-sm-0 font-weight-bold custombtn" type="button">Login</a>
+        </form> 
+    </div>
+    
+  </div>
+</nav>
+<!-- --------------------navbar end------ -->
+
+<!-- ---------------------------body------------------------------- -->
+<div class="container-fluid heroother" style="margin-top: 60px;">
+
+
+
+  <!-- ------------------hero---------------------- -->
+  <div class="row p-4 mx-lg-4 mx-xs-2">
+    <div class="col-lg-12 text-center align-self-center">
+      <h1 class="text-wrap pt-4">
+        MCQMED <span style="color: #e41b23;"> Help Center</span></h1>
+      <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec sociis elit aliquet orci aliquam, viverra tristique. Tellus massa justo, amet, sagittis. Mauris, dolor, convallis porta a, eu, vestibulum viverra. Gravida feugiat sit netus at eget tincidunt in quam.</p>
+
+       <form>
+          <div class="row justify-content-center">
+            <div class="input-group" style="width: 60%;">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-search"></i></div>
+              </div>
+               <input class="form-control searchbox" id="myInput" type="search" placeholder="Search" aria-label="Search">
+               <div class="input-group-append">
+                  <span class="input-group-btn">
+                    <button class="btn searchbtn" type="submit">Search</button>
+                  </span>
+                </div>
+            </div>          
+          </div>  
+        </form>
+
+    </div>
+  </div>
+  <!-- -------------hero end------ -->
+
+  <!-- ------------------subjects---------------------- -->
+ 
+          <!-- //vertical tabs help center section------------------------------------------------------- -->
+    <div class="row mx-lg-4 mx-xs-2 py-0">
+      <div class="col-lg-3 col-sm-12 helpcenteralltabs">
+        <div class="nav flex-column nav-fill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <!-- -------------------------collapsible tabs --------------------------->
+          <!-- -----------1st tab non clickable----------------------------------------------------------- -->
+          <div type="button" class="btn btn-link px-2 helpcentertab" data-toggle="collapse" data-target="#helpcentertab1">     
+              <span><b>Accounts</b></span>
+              <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+          </div>
+          <!-- --------------1st tab collapse clickable------------------------------------------------------------ -->
+          <div id="helpcentertab1" class="collapse show  justify-content-center">
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" data-target="#v-pills-1" role="tab" aria-controls="v-pills-1">Account setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="v-pills-2-tab" data-toggle="pill" data-target="#v-pills-2" role="tab" aria-controls="v-pills-2">Login to MCQMED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" data-target="#v-pills-3" role="tab" aria-controls="v-pills-3">Change or reset password</a>
+              </li>
+            </ul>
+
+          </div>
+            <!-- -----------2st tab non clickable----------------------------------------------------------- -->
+          <div type="button" class="btn btn-link px-2 helpcentertab" data-toggle="collapse" data-target="#helpcentertab2">     
+              <span><b>User Guide</b></span>
+              <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+          </div>
+          <!-- --------------2st tab collapse clickable------------------------------------------------------------ -->
+          <div id="helpcentertab2" class="collapse   justify-content-center">
+
+            <ul class="nav flex-column">
+               <li class="nav-item">
+                <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" data-target="#v-pills-4" role="tab" aria-controls="v-pills-4">4th content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="v-pills-2-tab" data-toggle="pill" data-target="#v-pills-2" role="tab" aria-controls="v-pills-2">Login to MCQMED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" data-target="#v-pills-3" role="tab" aria-controls="v-pills-3">Change or reset password</a>
+              </li>
+            </ul>
+
+          </div>
+            <!-- -----------3st tab non clickable----------------------------------------------------------- -->
+          <div type="button" class="btn btn-link px-2 helpcentertab" data-toggle="collapse" data-target="#helpcentertab3">     
+              <span><b>Accounts</b></span>
+              <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+          </div>
+          <!-- --------------3st tab collapse clickable------------------------------------------------------------ -->
+          <div id="helpcentertab3" class="collapse   justify-content-center">
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" data-target="#v-pills-1" role="tab" aria-controls="v-pills-1">Account setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="v-pills-2-tab" data-toggle="pill" data-target="#v-pills-2" role="tab" aria-controls="v-pills-2">Login to MCQMED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" data-target="#v-pills-3" role="tab" aria-controls="v-pills-3">Change or reset password</a>
+              </li>
+            </ul>
+
+          </div>
+            <!-- -----------4st tab non clickable----------------------------------------------------------- -->
+          <div type="button" class="btn btn-link px-2 helpcentertab" data-toggle="collapse" data-target="#helpcentertab4">     
+              <span><b>Accounts</b></span>
+              <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+          </div>
+          <!-- --------------4st tab collapse clickable------------------------------------------------------------ -->
+          <div id="helpcentertab4" class="collapse   justify-content-center">
+
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" data-target="#v-pills-1" role="tab" aria-controls="v-pills-1">Account setting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="v-pills-2-tab" data-toggle="pill" data-target="#v-pills-2" role="tab" aria-controls="v-pills-2">Login to MCQMED</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" data-target="#v-pills-3" role="tab" aria-controls="v-pills-3">Change or reset password</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" data-target="#v-pills-4" role="tab" aria-controls="v-pills-4">Change or second collapible tab 1st link</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- -------------------------collapsible tabs end--------------------------->
+        </div>
+      </div>
+      <div class="col-lg-9 col-sm-12">
+        <div class="tab-content" id="v-pills-tabContent myFAQ">
+          <!-- ----------1st tab----------------------------- -->
+          <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+            <!-- ----------1st tab content--------------------- -->
+            <p>Account setting -Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas aliquam dignissim eu cursus ultrices. Mauris viverra arcu tristique ut aenean mauris adipiscing. Facilisis ullamcorper euismod donec sem tristique netus neque diam at. Nec enim scelerisque malesuada vel hendrerit pharetra neque tellus tincidunt. Nec in duis metus bibendum cras dis facilisis nulla sed. Sed lacus turpis quisque ut. Gravida sit nisl integer quis risus ac. Fringilla interdum volutpat tincidunt mattis fames blandit placerat. Vitae fringilla quam adipiscing nisl sit vestibulum nibh. Enim a ut arcu odio varius nunc aliquam. idiculus fringilla cras facilisi fermentum. At at dignissim fames condimentum. Vivamus imperdiet feugiat pulvinar in. Nunc fermentum eget hendrerit consequat purus.</p>
+            <!-- ----------1st tab content ends--------------------- -->
+            
+          </div>
+          <!-- ----------1st tab  ends----------------------------- -->
+
+          <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+            <p>Login to MCQMED</p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+            <p>Change or reset password</p>
+          </div>
+          <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+            <p>second collapible tab 1st link</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------vertical tab help center section ends----------------------------------------- -->
+
+    <div class="d-flex flex-row justify-content-center ">
+      <p class="align-self-center m-2 ">Was this helpful</p>
+      <!-- --------------------toast or alert box - thanks for the feedback -->
+       <button class="btn m-2 font-weight-bold custombtn-blue" type="button">Yes</button>
+       <button class="btn m-2 font-weight-bold custombtn-white" type="button">No</button>
+    </div>
+
+
+    
+
+  <!-- -------------subjects end------ -->
+
+
+
+
+    <!-- -------------------chat support------------------------------->
+  <!--   <div class="row pt-4 ">
+        <div class="col-lg-12 text-center justify-content-center">
+            <h2 class="pt-4">Just wanna chat?</h2>
+            <p class="text-center">Click our live chatbot</p>
+        </div>
+    </div> -->
+  <!-- ------------chat support end------ -->
+
+</div>
+
+
+
+
+
+
+<!-- ---------------------------footer----------------------------------- -->
+<div class="footer text-white">
+  <div class="row justify-content-center">
+      <div class="col-lg pb-3 text-lg-left text-md-center">
+          <h4><b>About Us</b></h4>
+          <p>MCQMED.LK is an unrivalled, powerful and updated question bank of thousands of questions to help you ace your MCQ papers.</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Like us on facebook!" class="social social-blue p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on twitter!" class="social social-blue p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Follow us on instagram!" class="social social-blue p-2"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+              <a href="https://www.tiktok.com/@mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on tiktok!" class="social social-blue p-2"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            </div>
+          
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+        <h4><b>Company</b></h4>
+          <p class="p-2"><a href="index.html">Home</a></p>
+          <p class="p-2"><a href="questions.html">Questions</a></p>
+          <p class="p-2"><a href="notes.html">Notes</a></p>
+          <p class="p-2"><a href="about.html">About us</a></p>
+          <p class="p-2"><a href="contact.html">Contact us</a></p>
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Members</b></h4>
+          <p class="p-2"><a href="login.html">Login</a></p>
+          <p class="p-2"><a href="signup.html">Sign up</a></p>
+          <p class="p-2"><a href="subscription.html">Subscription</a></p>
+
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Information</b></h4>
+          <p class="p-2"><a href="blog.html">Blog</a></p>
+          <p class="p-2"><a href="faq.html">FAQ</a></p>
+          <p class="p-2"><a href="helpcenter.html">Help Center</a></p>
+          <p class="p-2"><a href="privacy.html">Privacy and Policy</a></p>
+          <p class="p-2"><a href="terms.html">Terms and conditions</a></p>
+
+      </div>
+
+  </div>
+</div>
+<div class="copyright">
+    <p class="text-lg-left text-sm-center small text-white">@ MCQMED.LK 2022. AllRight Reserved</p>
+</div>
+<!-- -----------------------footer  end------------------------------- -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+
+</html>

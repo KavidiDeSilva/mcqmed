@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subscription</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+    <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+    <link type="text/css" href='../css/style.css' rel='stylesheet'>
+    <link type="text/css" href='../css/common.css' rel='stylesheet'>
+    
+    <style type="text/css">
+
+        .overlayimg{
+            background: url(../img/subscription.png);
+            background-repeat: no-repeat;
+            background-size: 700px auto;
+            background-position-x: 20%;
+        }
+        @media screen and (max-width: 600px) {
+          .overlayimg{
+            background-position-x: left;
+            background-size: contain;
+          }
+        }
+  
+
+
+    </style>
+</head>
+<body>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-lg" id="toTopBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ----------------navbar------------------------------------- -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand pl-4" href="../index.html">
+     <img src="../img/logo.png" width="60" height="auto" alt="MCQMED Logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center " id="navbarToggler1">
+    <ul class="navbar-nav m-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questions.html">Questions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notes.html">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subscription.html">Subscription</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="navbtn">
+       <form class="form-inline my-2 my-lg-0">
+          <a href="login.html" class="btn btn-sm btn-all btn-brand-blue font-weight-bold my-2" type="button">Login</a>
+        </form> 
+    </div>
+    
+  </div>
+</nav>
+<!-- --------------------navbar end------ -->
+
+<!-- ---------------------------body------------------------------- -->
+<div class="container-fluid heroother" style="margin-top: 60px;">
+
+
+
+  <!-- ------------------hero---------------------- -->
+  <div class="row py-4 mx-lg-4 mx-xs-2">
+    <div class="col-lg-12 text-xl-left text-lg-center align-self-center overlayimg">
+      <h1 class="text-wrap pt-4">Choose the <span style="color: #e41b23;"> Plan</span></h1>
+    </div>
+  </div>
+  <!-- -------------hero end------ -->
+
+  <!-- ------------------subscription---------------------- -->
+  <div class="row mx-lg-4 mx-xs-2 p-0">
+    <div class="col-lg-6 text-xl-left text-lg-center align-self-start">
+      <h2 class="text-wrap py-2">
+        All our <span style="color: #e41b23;"> packages</span> include / What you’ll get
+      </h2>
+      <ul style="list-style-type: none;" class="fa-ul">
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fa-solid fa-calendar-days"></i></span> 6000+ MCQ question bank</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fa-solid fa-book"></i></span> Questions arranged topic-wise for easy practice and self-assessment after studying each topic</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fa-solid fa-book-atlas"></i></span> Use free time travelling and in the wards practicing on your phone, tab or laptop! Get in, and start practicing right now!</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fas fa-calendar-times"></i></span> Nominal cost. Keep track. Cancel anytime.</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fas fa-hourglass-half"></i></span> No need to hassle renewing subscription</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fas fa-history"></i></span> Not subjected to price changes within subscription period.</li>
+          <li class="my-2"><span class="fa-li pr-4"><i class="fa-lg fas fa-swatchbook"></i></span> Stop carrying heavy pastpaper books, Stop wasting time collecting mcq questions.</li>
+      </ul>
+    </div>
+
+    <div class="col-lg-6 align-self-start">
+        <div class="accordion" id="subscriptionAccordion">
+          <!-- ----------------------card 1------------------------------------- -->
+            <div class="card my-2 py-1 subscriptionbox">
+            <div class="card-header bg-white border-0 py-0" id="headingOne">
+              <a class="list-group-item list-group-item-action bg-white border-0 m-0" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label d-flex justify-content-between" for="exampleRadios1">
+                      <h4><b>Basic</b><br/> <small><b>30 Days</b></small></h4> 
+                      <p><b>Rs.1000</b><br/><del  style="color: #F04653;"><small><b>Rs. 1500</b></small></del></p>
+                  </label>
+                  </div>
+              </a>
+            </div>
+            <!-- ----------content------------ -->
+            <div id="collapseOne" class="collapse show card-collapse" aria-labelledby="headingOne" data-parent="#subscriptionAccordion">
+              <div class="card-body pl-4 py-0">
+                <ul >
+                  <li><small>Free notes access</small></li>
+                  <li><small>Unlimited access</small></li>
+                  <li><small>Weekly test</small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ----------card 1 ends--------------------------- -->
+
+
+          <!-- ---------------card 2------------------------------------------------------ -->
+
+          <div class="card my-2 py-1 subscriptionbox">
+            <div class="card-header bg-white border-0 py-0" id="headingTwo">
+              <a class="list-group-item list-group-item-action bg-white border-0 m-0" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                 <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                    <label class="form-check-label d-flex justify-content-between" for="exampleRadios2">
+                      <h4><b>Standard</b><br/> <small><b>3 Months</b></small></h4> 
+                      <p><b>Rs.1000</b><br/><del  style="color: #F04653;"><small><b>Rs. 1500</b></small></del></p>
+                  </label>
+                  </div>
+              </a>
+            </div>
+
+            <div id="collapseTwo" class="collapse card-collapse" aria-labelledby="headingTwo" data-parent="#subscriptionAccordion">
+              <div class="card-body pl-4 py-0">
+                <ul >
+                  <li><small>Free notes access</small></li>
+                  <li><small>Unlimited access</small></li>
+                  <li><small>Weekly test</small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 py-1 subscriptionbox">
+            <div class="card-header bg-white border-0 py-0" id="headingThree">
+              <a class="list-group-item list-group-item-action bg-white border-0 m-0" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                 <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                    <label class="form-check-label d-flex justify-content-between" for="exampleRadios3">
+                      <h4><span class="d-flex align-items-center"><b class="pr-2">Plus</b><span class="badge badge-danger smallertxt badge-pill">Most Popular</span></span><small><b>6 Months</b></small></h4> 
+                      <p><b>Rs.1000</b><br/><del  style="color: #F04653;"><small><b>Rs. 1500</b></small></del></p>
+                  </label>
+                  </div>
+              </a>
+            </div>
+
+            <div id="collapseThree" class="collapse card-collapse" aria-labelledby="headingThree" data-parent="#subscriptionAccordion">
+              <div class="card-body pl-4 py-0">
+                <ul >
+                 <li><small>Free notes access</small></li>
+                  <li><small>Unlimited access</small></li>
+                  <li><small>Weekly test</small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 py-1 subscriptionbox">
+            <div class="card-header bg-white border-0 py-0" id="headingFour">
+              <a class="list-group-item list-group-item-action bg-white border-0 m-0" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                 <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked>
+                    <label class="form-check-label d-flex justify-content-between" for="exampleRadios4">
+                      <h4><b>Premium</b><br/> <small><b>1 Year</b></small></h4> 
+                      <p><b>Rs.1000</b><br/><del  style="color: #F04653;"><small><b>Rs. 1500</b></small></del></p>
+                  </label>
+                  </div>
+              </a>
+            </div>
+
+            <div id="collapseFour" class="collapse card-collapse" aria-labelledby="headingFour" data-parent="#subscriptionAccordion">
+              <div class="card-body pl-4 py-0">
+                <ul >
+                 <li><small>Free notes access</small></li>
+                  <li><small>Unlimited access</small></li>
+                  <li><small>Weekly test</small></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+        <p class="text-right"><a href="#" class="text-decoration-none text-body">Show full comparison</a></p>
+        <div class="text-center py-1">
+              <a href="../pages/signup.html" class="btn btn-all btn-brand-blue w-100 font-weight-bold">Continue</a>
+          </div>
+        </div>
+        
+    </div>
+    
+  </div>
+  <!-- ----------------------subscription ends----------- -->
+
+
+  <!-- ---------subjects------------------------------------ -->
+  <div class="row pt-4 subjects">
+        <div class="col-lg-12 text-center justify-content-start">
+            <h2 class="pt-4 font-weight-bold">Subjects</h2>
+            <div class="row m-2 pb-4">
+                <!-- ---------subject 1------------- -->
+                <div class="col-lg card d-flex align-items-center flex-column bg-white p-4 m-2">
+                  <div class="flexible"></div>
+                    <div class="text-center">
+                      <img src="../img/11.png" alt="Avatar" style="width:100px">
+                    </div>
+                    <div class="flexible"></div>
+                   <div class="py-2"><b>Medicine</b></div>
+                </div>
+                <!-- ---------subject 1 ends------------- -->
+                <!-- ---------subject 2------------- -->
+                <div class="col-lg card d-flex align-items-center flex-column bg-white p-4 m-2">
+                  <div class="flexible"></div>
+                    <div class="text-center">
+                      <img src="../img/22.png" alt="Avatar" style="width:100px">
+                    </div>
+                    <div class="flexible"></div>
+                   <div class="py-2"><b>Surgery</b></div>
+                </div>
+                <!-- ---------subject 2 ends------------- -->
+                <!-- ---------subject 3------------- -->
+                <div class="col-lg card d-flex align-items-center flex-column bg-white p-4 m-2">
+                  <div class="flexible"></div>
+                    <div class="text-center">
+                      <img src="../img/33.png" alt="Avatar" style="width:100px">
+                    </div>
+                    <div class="flexible"></div>
+                   <div class="py-2"><b>Peadiatrics</b></div>
+                </div>
+                <!-- ---------subject 3 ends------------- -->
+                <!-- ---------subject 4------------- -->
+                <div class="col-lg card d-flex align-items-center flex-column bg-white p-4 m-2">
+                  <div class="flexible"></div>
+                    <div class="text-center">
+                      <img src="../img/44.png" alt="Avatar" style="width:100px">
+                    </div>
+                    <div class="flexible"></div>
+                   <div class="py-2"><b>Psychiatry</b></div>
+                </div>
+                <!-- ---------subject 4 ends------------- -->
+                <!-- ---------subject 5------------- -->
+                <div class="col-lg card d-flex align-items-center flex-column bg-white p-4 m-2">
+                  <div class="flexible"></div>
+                    <div class="text-center">
+                      <img src="../img/55.png" alt="Avatar" style="width:100px">
+                    </div>
+                    <div class="flexible"></div>
+                   <div class="py-2"><b>Gynecology and Obstretics</b></div>
+                </div>
+                <!-- ---------subject 5 ends------------- -->
+
+            
+
+
+            </div>
+        </div>
+  </div>
+  <!-- -------------------subject ends---->
+
+  <!-- ---------------------what we offer----------------------------- -->
+  <div class="row mx-lg-4 mx-xs-2 d-flex align-items-center">
+    <div class="col-lg-12 m-2">
+       <h2 class="text-center pt-4">What we offer</h2>
+      <div class="row m-0 p-0">
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a1.png" class="img img-fluid my-1" alt="Regular Updates">
+          <h4><b>Regular Updates</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a2.png" class="img img-fluid my-1" alt="Question Bank">
+          <h4><b>Question Bank</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a3.png" class="img img-fluid my-1" alt="Easy Access">
+          <h4><b>Easy Access</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+      </div>
+      <div class="row m-0 p-0">
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a4.png" class="img img-fluid my-1" alt="Test">
+          <h4><b>Test</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a5.png" class="img img-fluid my-1" alt="More Soon">
+          <h4><b>More Soon</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+        <div class="col-lg offerbox p-2 m-2 text-center">
+          <img src="../img/a6.png" class="img img-fluid my-1" alt="24/7 Support">
+          <h4><b>24/7 Support</b></h4>
+          <p>We add more questions weekly – and aim to cover all questions from the Sri lankan final MBBS common mcq and ERPM exams. Support us grow!</p>
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+  <!-- ---------------what we offer ends------------- -->
+
+
+  <!-- -------------main end------ -->
+
+
+
+    <!-- -------------------chat support------------------------------->
+    <div class="row pt-4 ">
+        <div class="col-lg-12 text-center justify-content-center">
+            <h2 class="pt-4">Just wanna chat?</h2>
+            <p class="text-center">Click our live chatbot</p>
+        </div>
+    </div>
+  <!-- ------------chat support end------ -->
+
+</div>
+
+
+
+
+
+<!-- ---------------------------footer----------------------------------- -->
+<div class="footer text-white">
+  <div class="row justify-content-center">
+      <div class="col-lg pb-3 text-lg-left text-md-center">
+          <h4><b>About Us</b></h4>
+          <p>MCQMED.LK is an unrivalled, powerful and updated question bank of thousands of questions to help you ace your MCQ papers.</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Like us on facebook!" class="social social-blue p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on twitter!" class="social social-blue p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Follow us on instagram!" class="social social-blue p-2"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+              <a href="https://www.tiktok.com/@mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on tiktok!" class="social social-blue p-2"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            </div>
+          
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+        <h4><b>Company</b></h4>
+          <p class="p-2"><a href="index.html">Home</a></p>
+          <p class="p-2"><a href="questions.html">Questions</a></p>
+          <p class="p-2"><a href="notes.html">Notes</a></p>
+          <p class="p-2"><a href="about.html">About us</a></p>
+          <p class="p-2"><a href="contact.html">Contact us</a></p>
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Members</b></h4>
+          <p class="p-2"><a href="login.html">Login</a></p>
+          <p class="p-2"><a href="signup.html">Sign up</a></p>
+          <p class="p-2"><a href="subscription.html">Subscription</a></p>
+
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Information</b></h4>
+          <p class="p-2"><a href="blog.html">Blog</a></p>
+          <p class="p-2"><a href="faq.html">FAQ</a></p>
+          <p class="p-2"><a href="helpcenter.html">Help Center</a></p>
+          <p class="p-2"><a href="privacy.html">Privacy and Policy</a></p>
+          <p class="p-2"><a href="terms.html">Terms and conditions</a></p>
+
+      </div>
+
+  </div>
+</div>
+<div class="copyright">
+    <p class="text-lg-left text-sm-center small text-white">@ MCQMED.LK 2022. All Right Reserved</p>
+</div>
+<!-- -----------------------footer  end------------------------------- -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

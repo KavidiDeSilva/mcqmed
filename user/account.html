@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+        <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+        <link type="text/css" href='../css/userstyle.css' rel='stylesheet'>
+        <link type="text/css" href='../css/common.css' rel='stylesheet'>
+        <style type="text/css">
+           
+        </style>
+    </head>
+    <body>
+        <div class="wrapper d-flex align-items-stretch">
+        <!-- ------------------sidebar--------------------- -->
+        <nav id="sidebar">
+            <div style="" class="sidebarscroll d-flex align-items-between flex-column">
+                <!-- Logo -->
+                <div class="text-center pt-4">
+                    <img src="../img/logo.png" width="30%" class="logo img img-fluid">
+                    <p class="text-muted pt-1">Student</p>
+                </div>
+
+                <!-- Sidebar -->
+                <ul class="nav nav-pills d-flex flex-column list-unstyled sidebar-menu">
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="dashboard.html" class="nav-link" aria-current="page"> <i class="fa-solid fa-chart-pie"></i>
+                        <span class="ml-2">Overview</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="quiz.html"  class="nav-link" aria-current="page"> <i class="fa-solid fa-list-check"></i>
+                        <span class="ml-2">Quiz</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1">
+                        <a href="#pageSub2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link"><i class="fas fa-book-medical"></i> <span class="ml-2">Notes</span></a>
+                        <ul class="collapse list-unstyled" id="pageSub2">
+                            <li>
+                                <a href="medicine.html" class="nav-link">Medicine</a>
+                            </li>
+                            <li>
+                                <a href="surgery.html" class="nav-link">Surgery</a>
+                            </li>
+                            <li>
+                                <a href="peadiatrics.html" class="nav-link">Peadiatrics</a>
+                            </li>
+                            <li>
+                                <a href="psychiatry.html" class="nav-link">Psychiatry</a>
+                            </li>
+                            <li>
+                                <a href="gynobs.html" class="nav-link">Gynecology and Obstretics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="messages.html" class="nav-link">
+                        <span class="mx-2">Messages <span class="badge badge-pill badge-primary">03</span></span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="activities.html" class="nav-link"> <i class="fa-solid fa-chart-line"></i>
+                        <span class="ml-2">Activities</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="bookmarks" class="nav-link"> <i class="fa-solid fa-bookmark"></i>
+                        <span class="ml-2">Bookmarks</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="account.html" class="nav-link active"> <i class="fa-solid fa-user-gear"></i>
+                        <span class="ml-2">Account</span> 
+                        </a> 
+                    </li>
+                </ul>
+
+                <!-- FAQDiv -->
+                <div class="card text-center m-2 pt-3  d-flex align-items-center border-0 ">
+                    <img src="../img/boyavatar.png" class="img img-fluid" width="20%"  style="position: absolute;  margin-top: -10%;">
+                    <div class="card-body text-white p-1 rounded" style="background-color:  #003049;">
+                        <p class="pt-3 mb-1"><small>Need more information? Check out our Help Center.</small></p>
+                         <a href="../pages/helpcenter.html" target="_blank" class="btn btn-sm btn-all btn-brand-blue-outline mb-2 mt-0 font-weight-bold">Help Center</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ----------------------sidebar ends--------------- -->
+        <!-- Main Div ------------------------ -->
+        <div id="mainDiv" >
+            <!-- ----------topnav----------------------------------------------------- -->
+            <div class="custom-menu d-flex justify-content-between bg-white px-2"  >
+                <button type="button" id="sidebarCollapse" class="btn btnlink">
+                <i class="fa-solid fa-bars"></i><span class="sr-only">Toggle Menu</span>
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                    <span class="text-nowrap"><small>{logged user's firstname}</small></span>
+                    <img src="../img/girlavatar.png" class="img img-fluid" style="width: 30px;">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Account</button>
+                        <button class="dropdown-item" type="button">Subscription</button>
+                        <button class="dropdown-item" type="button">FAQ</button>
+                        <button class="dropdown-item" type="button">Logout</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------topnav ends---------------------------------- -->
+            <!-- Back to top button -->
+            <button type="button" class="btn btn-lg" id="toTopBtn">
+            <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <!-- ---------------------content------------------------------------------------------ -->
+            <div class="content pt-2 pb-4 px-4">
+
+                <!-- all tasks activities -->
+                <h2 class="mx-2"><b>Account</b></h2>
+                <div class="my-2 mb-4">
+                   <!-- Nav tabs -->
+                   <ul class="nav nav-pills mt-2" role="tablist">
+                      <li class="nav-item px-lg-2 m-1">
+                         <a class="nav-link active subjectbtn " data-toggle="tab" href="#profile" aria-selected="true" role="tab">Profile</a>
+                      </li>
+                      <li class="nav-item px-lg-2 m-1">
+                         <a class="nav-link subjectbtn" data-toggle="tab" href="#password" role="tab">Password</a>
+                      </li>
+                      <li class="nav-item px-lg-2 m-1">
+                         <a class="nav-link subjectbtn" data-toggle="tab" href="#subscription" role="tab">Subscription</a>
+                      </li>
+                      <li class="nav-item px-lg-2 m-1">
+                         <a class="nav-link subjectbtn" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                      </li>
+                   </ul>
+                   <!-- Tab panes -->
+                   <div class="tab-content px-3 py-4">
+                      <!-- profile content -->
+                      <div class="tab-pane active" id="profile" role="tabpanel">
+                         <h4><b>Profile</b></h4>
+                         <div class="card border-0">
+                            <div class="card-body">
+                            
+                               <form>
+                                 <div class="form-group d-flex justify-content-center">
+                                    <div class="card border-0 text-white change-picture">
+                                          <img src="../img/icon1.png" class="card-img" alt="..." > 
+                                         <div class="card-img-overlay text-center text-dark">
+                                           <!-- <i class="fas fa-camera"></i> -->
+                                           <p>Edit Profile</p>
+                                         </div>
+                                    </div>
+                                 </div>
+                                  <div class="form-row mb-2">
+                                     <div class="col">
+                                        <label for="profile1"><b>I am <span style="color: #CF0A0A">&#42;</span></b></label>
+                                        <select class="form-control form-control-sm" id="profile1" required>
+                                           <option>An Undergraduate student</option>
+                                           <option>A Graduate student</option>
+                                           <option>A Teacher</option>
+                                           <option>A Doctor</option>
+                                           <option>5</option>
+                                        </select>
+                                     </div>
+                                     <div class="col">
+                                       <label for="profile2"><b>I am preparing for <span style="color: #CF0A0A">&#42;</span></b></label>
+                                        <select class="form-control form-control-sm" id="profile2" required>
+                                           <option>Final MBBS exams</option>
+                                           <option>ERPM exams</option>
+                                           <option>Other</option>
+                                        </select>
+                                     </div>
+                                     <div class="col">
+                                       <label for="profile3"><b>I plan to use MCQMED <span style="color: #CF0A0A">&#42;</span></b></label>
+                                        <select class="form-control form-control-sm" id="profile3" required>
+                                           <option>Every day</option>
+                                           <option>Every 2-3 days</option>
+                                           <option>Once a month</option>
+                                        </select>
+                                     </div>
+                                  </div>
+                                  <div class="form-group">
+                                     <label for="profile4"><b>What are your study goals </b></label>
+                                     <textarea  type="text" class="form-control form-control-sm" id="profile4" placeholder="What are your study goals" rows="3"></textarea>
+                                  </div>
+                                  <div class="form-row mb-2">
+                                     <div class="col">
+                                        <label for="profile5"><b>First name <span style="color: #CF0A0A">&#42;</span></b></label>
+                                        <input type="text" class="form-control form-control-sm" id="profile5" placeholder="First name" required>
+                                     </div>
+                                     <div class="col">
+                                        <label for="profile6"><b>Last name <span style="color: #CF0A0A">&#42;</span></b></label>
+                                        <input type="text" class="form-control form-control-sm" id="profile6" placeholder="Last name" required>
+                                     </div>
+                                  </div>
+                                  <div class="form-group">
+                                     <label for="profile7profile8"><b>Email <span style="color: #CF0A0A">&#42;</span></b></label>
+                                     <input type="text" class="form-control form-control-sm" id="profile7profile8" placeholder="Email" required>
+                                  </div>
+                                  <div class="d-flex justify-content-start">
+                                     <a href="" class="btn btn-sm btn-all btn-brand-blue my-2">Save</a>
+                                  </div>
+                               </form>
+                            </div>
+                         </div>
+                      </div>
+                      <!-- change password content -->
+                      <div class="tab-pane" id="password" role="tabpanel">
+                         <h4><b>Change Password</b></h4>
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <form>
+                                  <div class="form-group">
+                                     <label for="formGroupExampleInput"><b>Current Password <span style="color: #CF0A0A">&#42;</span></b></label>
+                                     <input type="text" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                  </div>
+                                  <div class="form-group">
+                                     <label for="formGroupExampleInput"><b>New Password <span style="color: #CF0A0A">&#42;</span></b></label>
+                                     <input type="text" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                  </div>
+                                  <div class="form-group">
+                                     <label for="formGroupExampleInput"><b>Confirm New Password <span style="color: #CF0A0A">&#42;</span></b></label>
+                                     <input type="text" class="form-control form-control-sm" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                     <small class="text-muted">Your password must be at least 8 characters long, and contain letters and numbers</small>
+                                  </div>
+                                  <div class="d-flex justify-content-start">
+                                     <a class="btn btn-sm btn-all btn-brand-blue my-2">Save Changes</a>
+                                  </div>
+                               </form>
+                            </div>
+                         </div>
+                      </div>
+                      <!-- subscription content -->
+                      <div class="tab-pane" id="subscription" role="tabpanel">
+                         <h4><b>Subscription</b></h4>
+                         <div class="d-flex flex-md-row flex-column">
+                            <div class="card d-flex flex-fill m-2 border-0">
+                               <div class="card-body d-flex flex-column">
+                                  <div class="d-flex justify-content-between">
+                                     <h4><span class="d-flex align-items-center"><b class="pr-2">Basic </b><span class="badge badge-success smallertxt badge-pill">Current Plan</span></span><small><b>30 Days</b></small></h4>
+                                     <p><b>Rs.1000</b><br/><del  style="color: #F04653;"><small><b>Rs. 1500</b></small></del></p>
+                                  </div>
+                                  <p class="text-left">14 days remaining</p>
+                                  <div class="mt-auto">
+                                     <a class="btn btn-sm btn-all btn-brand-gray mb-2">Cancel Subscription</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="card d-flex flex-fill m-2 border-0">
+                               <div class="card-body d-flex flex-column">
+                                  <div class="d-flex justify-content-between">
+                                     <h4><span class="d-flex align-items-center"><b class="pr-2">Plus</b><span class="badge badge-danger smallertxt text-wrap badge-pill">Most Popular</span></span><small><b>6 Months</b></small></h4>
+                                     <p><b>Rs.4500</b><br/><del  style="color: #F04653;"><small><b>Rs. 5000</b></small></del></p>
+                                  </div>
+                                  <div class="mt-auto">
+                                     <a class="btn btn-sm btn-all btn-brand-blue mb-2">Upgrade</a>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <h4 class="mt-4">
+                         <b>Billing History</b></h4 class="mt-4">
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <p>Biling History from {registered date} to {current plan}</p>
+                               <div class="table-responsive-sm">
+                                  <table class="table table-hover table-sm text-center">
+                                     <thead class="thead-dark">
+                                        <tr>
+                                           <th scope="col">#</th>
+                                           <th scope="col">Plan</th>
+                                           <th scope="col">Date</th>
+                                           <th scope="col">Amount</th>
+                                           <th scope="col">Invoice</th>
+                                        </tr>
+                                     </thead>
+                                     <tbody>
+                                        <tr>
+                                           <th scope="row">1</th>
+                                           <td>Basic</td>
+                                           <td>Ottossssssssssssssssss</td>
+                                           <td>@mdo</td>
+                                           <td><i class="fas fa-cloud-download-alt"></i></td>
+                                        </tr>
+                                        <tr>
+                                           <th scope="row">2</th>
+                                           <td>Basic</td>
+                                           <td>Thornton</td>
+                                           <td>@fat</td>
+                                           <td><i class="fas fa-cloud-download-alt"></i></td>
+                                        </tr>
+                                        <tr>
+                                           <th scope="row">3</th>
+                                           <td>Basic</td>
+                                           <td>the Bird</td>
+                                           <td>@twitter</td>
+                                           <td><i class="fas fa-cloud-download-alt"></i></td>
+                                        </tr>
+                                        <tr>
+                                           <th scope="row">4</th>
+                                           <td>Basic</td>
+                                           <td>the Bird</td>
+                                           <td>@twitter</td>
+                                           <td><i class="fas fa-cloud-download-alt"></i></td>
+                                        </tr>
+                                     </tbody>
+                                  </table>
+                               </div>
+                            </div>
+                         </div>
+                         <h4 class="mt-4"><b>Redeem a code</b></h4>
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <form>
+                                  <div class="form-group">
+                                     <label for="emailfriend"><b>Your Friends Email <span style="color: #CF0A0A">&#42;</span></b></label>
+                                     <input type="text" class="form-control form-control-sm" id="emailfriend" placeholder="Email">
+                                  </div>
+                                  <div class="d-flex justify-content-start my-2">
+                                     <a class="btn btn-sm btn-all btn-brand-blue show m-2">Send a mail</a>
+                                  </div>
+                               </form>
+                            </div>
+                         </div>
+                      </div>
+                      <!-- settings content -->
+                      <div class="tab-pane" id="settings" role="tabpanel">
+                         <h4><b>Email Preference</b></h4>
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <form>
+                                  <div class="custom-control custom-switch">
+                                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                     <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                                  </div>
+                                  <div class="custom-control custom-switch">
+                                     <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                     <label class="custom-control-label" for="customSwitch2">Receive emails about questions</label>
+                                  </div>
+                               </form>
+                            </div>
+                         </div>
+                         <h4 class="mt-4">
+                         <b>Delete Account</b></h4 class="mt-4">
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <p>You can delete account click here</p>
+                               <div class="d-flex justify-content-start my-2">
+                                  <a class="btn btn-sm btn-all btn btn-danger m-2">Delete Account</a>
+                               </div>
+                            </div>
+                         </div>
+                         <h4 class="mt-4"><b>Reset account data</b></h4>
+                         <div class="card border-0">
+                            <div class="card-body">
+                               <p>You can reset your questions/flashcards data via the button below</p>
+                               <div class="d-flex justify-content-start my-2">
+                                  <a class="btn btn-sm btn-all btn btn-brand-blue m-2">Reset Account</a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!--all tasks end- -->
+
+                <!-- user dashboard footer -->
+                <div class="row user-footer pb-4" style="padding-top: 40px;">
+                   <div class="col-md-12 d-flex flex-md-row flex-column justify-content-between align-items-center">
+                      <div>
+                         <ul class="nav flex-md-row flex-column text-center">
+                            <li class="nav-item">
+                               <a class="nav-link font-weight-bold text-dark active" target="_blank" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link font-weight-bold text-dark" target="_blank" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link font-weight-bold text-dark" target="_blank" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link font-weight-bold text-dark" target="_blank" href="#">Terms and Conditions</a>
+                            </li>
+                         </ul>
+                      </div>
+                      <div>
+                         <a class="nav-link flex-fill font-weight-bold text-dark" target="_blank" href="www.mcqmed.lk">@MCQMED</a>
+                      </div>
+                      <div>
+                         <div class="d-flex justify-content-center">
+                            <a href="https://www.facebook.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Like us on facebook!" class="social-sm social-white p-1"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on twitter!" class="social-sm social-white p-1"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Follow us on instagram!" class="social-sm social-white p-1"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- user dashboard footer ends -->
+                    
+            </div>
+            <!-- content ends -->
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+        <script src="../js/userscript.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <script type="text/javascript">
+
+            
+        </script>
+    </body>
+</html>

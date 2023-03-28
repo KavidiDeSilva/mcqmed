@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+    <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+    <link type="text/css" href='../css/style.css' rel='stylesheet'>
+    <link type="text/css" href='../css/common.css' rel='stylesheet'>
+    
+    <style type="text/css">
+
+        .overlayimg{
+            background: url(../img/contactus.png);
+            background-repeat: no-repeat;
+            background-size: 800px auto;
+            background-position-x: 20%;
+        }
+        .pattern{
+            background: url(../img/pattern.png);
+            background-repeat: repeat;
+            background-size: auto;
+            border-radius: 12px;
+        }
+        @media screen and (max-width: 600px) {
+          .overlayimg{
+            background-position-x: left;
+            background-size: contain;
+          }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-lg" id="toTopBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ----------------navbar------------------------------------- -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand pl-4" href="../index.html">
+     <img src="../img/logo.png" width="60" height="auto" alt="MCQMED Logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center " id="navbarToggler1">
+    <ul class="navbar-nav m-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questions.html">Questions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notes.html">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subscription.html">Subscription</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="navbtn">
+       <form class="form-inline my-2 my-lg-0">
+          <a href="login.html" class="btn btn-sm btn-all btn-brand-blue font-weight-bold my-2" type="button">Login</a>
+        </form> 
+    </div>
+    
+  </div>
+</nav>
+<!-- --------------------navbar end------ -->
+
+<!-- ---------------------------body------------------------------- -->
+<div class="container-fluid heroother" style="margin-top: 60px;">
+
+
+
+  <!-- ------------------hero---------------------- -->
+  <div class="row py-4 mx-lg-4 mx-xs-2">
+    <div class="col-lg-12 text-xl-left text-lg-center align-self-center overlayimg">
+      <h1 class="text-wrap pt-4">
+        We are here to <span style="color: #e41b23;"> help !</span></h1>
+      <p class="pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec sociis elit aliquet orci aliquam, viverra tristique. Tellus massa justo, amet, sagittis. Mauris, dolor, convallis porta a, eu, vestibulum viverra. Gravida feugiat sit netus at eget tincidunt in quam.</p>
+      <div class="flexible"></div>
+
+    </div>
+  </div>
+  <!-- -------------hero end------ -->
+
+  <!-- ------------------contact---------------------- -->
+  <div class="row mx-lg-4 mx-xs-2 p-0">
+    <div class="col-lg-6 align-self-start">
+
+        <h3 class="text-wrap py-2 "><b>Our Office</b></h3>
+        <img class="img-fluid w-100" src="../img/office.png">
+        <p class="pt-4 font-weight-bold">MCQMED pvt ltd</p>
+        <p >
+            No. 14, <br/>
+            Sir Baron Jayatilake Mawatha, <br/>
+            00100<br/>
+            +94701234567<br/>
+            support@mcqmed.lk
+        </p>
+    </div>
+
+    <div class="col-lg-6 text-xl-left text-lg-center align-self-start">
+      <h3 class="text-wrap py-2 ">
+        <b>Contact us!</b>
+      </h3>
+      <p>Have questions about subscription plans, an inquiry or feedbackfor us? Fill out the form and our MCQMED team will be in touch directly.</p>
+      <form class="formbox">
+          <div class="form-group">
+            <label for="name"><b>Name <span style="color: #CF0A0A">&#42;</span></b></label>
+            <input type="email" class="form-control" id="name" aria-describedby="name" placeholder="Eg: John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email"><b>Email <span style="color: #CF0A0A">&#42;</span></b></label>
+            <input type="email" class="form-control" id="email" placeholder="Eg: johndoe@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message"><b>Message</b></label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Help me understand how I can help you?"></textarea>
+          </div>
+          <div class="text-center">
+              <button type="submit" class="btn btn-sm btn-all btn-brand-blue font-weight-bold my-2">Send a message</button>
+          </div>
+        </form>
+      <div class="flexible"></div>
+
+    </div>
+    
+  </div>
+  <!-- -------------contact end------ -->
+
+  <!-- -------------------customer support------------------------------->
+    <div class="row pt-4 ">
+        <div class="col-lg-12 text-center justify-content-center">
+            <h2 class="pt-4">Customer Support</h2>
+            <p class="text-center">We understand you have questions that are not answered in our FAQ section. <br/>
+            If you cannot find the answer to your question, please feel free to contact support. </p>
+            <div class="row m-4 pb-2 justify-content-center text-white pattern" style="background-color: #003049;">
+                <!-- ---------customer support 1------------- -->
+                    <div class="col-lg col-sm-12 pb-4">
+                       <h4 class="py-2"><b>Browse our answers to your questions</b></h4>
+                       <div class="text-center">
+                        <a href="faq.html" class="btn btn-sm btn-all text-dark bg-white font-weight-bold my-2">FAQ
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                       </div>
+                    </div>
+                    <div class="col-lg col-sm-12 pb-4 align-self-end">
+                       <h4 class="py-2"><b>Browse our help center</b></h4>
+                       <div class="text-center">
+                        <a href="helpcenter.html" class="btn btn-sm btn-all text-dark bg-white font-weight-bold my-2">Help Center
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                       </div>
+                    </div>
+                    <div class="col-lg col-sm-12 pb-4">
+                        <h4 class="py-2"><b>Please contact us</b> <br/> support@mcqmed.lk</h4>
+                       <div class="text-center">
+                        <div class="d-flex justify-content-center">
+                           <a href="https://www.facebook.com/mcqmedlk/" data-toggle="tooltip" title="Like us on facebook!" class="social social-white p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                           <a href="https://twitter.com/mcqmedlk" data-toggle="tooltip" title="Like us on twitter!" class="social social-white p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                           <a href="https://www.instagram.com/mcqmedlk/" data-toggle="tooltip" title="Visit us on instagram!" class="social social-white p-2"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                         </div>
+                       </div>
+                    </div>
+                <!-- ---------customer support 1 ends------------- -->
+
+
+                
+              
+
+            </div>
+
+        </div>
+    </div>
+  <!-- ------------customer support end------ -->
+    <!-- -------------------chat support------------------------------->
+    <div class="row pt-4 ">
+        <div class="col-lg-12 text-center justify-content-center">
+            <h2 class="pt-4">Just wanna chat?</h2>
+            <p class="text-center">Click our live chatbot</p>
+        </div>
+    </div>
+  <!-- ------------chat support end------ -->
+
+
+</div>
+
+
+
+
+
+
+<!-- ---------------------------footer----------------------------------- -->
+<div class="footer text-white">
+  <div class="row justify-content-center">
+      <div class="col-lg pb-3 text-lg-left text-md-center">
+          <h4><b>About Us</b></h4>
+          <p>MCQMED.LK is an unrivalled, powerful and updated question bank of thousands of questions to help you ace your MCQ papers.</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Like us on facebook!" class="social social-blue p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on twitter!" class="social social-blue p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Follow us on instagram!" class="social social-blue p-2"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+              <a href="https://www.tiktok.com/@mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on tiktok!" class="social social-blue p-2"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            </div>
+          
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+        <h4><b>Company</b></h4>
+          <p class="p-2"><a href="index.html">Home</a></p>
+          <p class="p-2"><a href="questions.html">Questions</a></p>
+          <p class="p-2"><a href="notes.html">Notes</a></p>
+          <p class="p-2"><a href="about.html">About us</a></p>
+          <p class="p-2"><a href="contact.html">Contact us</a></p>
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Members</b></h4>
+          <p class="p-2"><a href="login.html">Login</a></p>
+          <p class="p-2"><a href="signup.html">Sign up</a></p>
+          <p class="p-2"><a href="subscription.html">Subscription</a></p>
+
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Information</b></h4>
+          <p class="p-2"><a href="blog.html">Blog</a></p>
+          <p class="p-2"><a href="faq.html">FAQ</a></p>
+          <p class="p-2"><a href="helpcenter.html">Help Center</a></p>
+          <p class="p-2"><a href="privacy.html">Privacy and Policy</a></p>
+          <p class="p-2"><a href="terms.html">Terms and conditions</a></p>
+
+      </div>
+
+  </div>
+</div>
+<div class="copyright">
+    <p class="text-lg-left text-sm-center small text-white">@ MCQMED.LK 2022. All Right Reserved</p>
+</div>
+<!-- -----------------------footer  end------------------------------- -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+        <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+        <link type="text/css" href='../css/userstyle.css' rel='stylesheet'>
+        <link type="text/css" href='../css/common.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper d-flex align-items-stretch">
+        <!-- ------------------sidebar--------------------- -->
+        <nav id="sidebar">
+            <div style="" class="sidebarscroll d-flex align-items-between flex-column">
+                <!-- Logo -->
+                <div class="text-center pt-4">
+                    <img src="../img/logo.png" width="30%" class="logo img img-fluid">
+                    <p class="text-muted pt-1">Student</p>
+                </div>
+
+                <!-- Sidebar -->
+                <ul class="nav nav-pills d-flex flex-column list-unstyled sidebar-menu">
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="dashboard.html" class="nav-link active" aria-current="page"> <i class="fa-solid fa-chart-pie"></i>
+                        <span class="ml-2">Overview</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="quiz.html"  class="nav-link" aria-current="page"> <i class="fa-solid fa-list-check"></i>
+                        <span class="ml-2">Quiz</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1">
+                        <a href="#pageSub2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link"><i class="fas fa-book-medical"></i> <span class="ml-2">Notes</span></a>
+                        <ul class="collapse list-unstyled" id="pageSub2">
+                            <li>
+                                <a href="medicine.html" class="nav-link">Medicine</a>
+                            </li>
+                            <li>
+                                <a href="surgery.html" class="nav-link">Surgery</a>
+                            </li>
+                            <li>
+                                <a href="peadiatrics.html" class="nav-link">Peadiatrics</a>
+                            </li>
+                            <li>
+                                <a href="psychiatry.html" class="nav-link">Psychiatry</a>
+                            </li>
+                            <li>
+                                <a href="gynobs.html" class="nav-link">Gynecology and Obstretics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="messages.html" class="nav-link">
+                        <span class="mx-2">Messages <span class="badge badge-pill badge-primary">03</span></span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="activities.html" class="nav-link"> <i class="fa-solid fa-chart-line"></i>
+                        <span class="ml-2">Activities</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="bookmarks" class="nav-link"> <i class="fa-solid fa-bookmark"></i>
+                        <span class="ml-2">Bookmarks</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item px-1 mb-1"> 
+                        <a href="account.html" class="nav-link"> <i class="fa-solid fa-user-gear"></i>
+                        <span class="ml-2">Account</span> 
+                        </a> 
+                    </li>
+                </ul>
+
+                <!-- FAQDiv -->
+                <div class="card text-center m-2 pt-3  d-flex align-items-center border-0 ">
+                    <img src="../img/boyavatar.png" class="img img-fluid" width="20%"  style="position: absolute;  margin-top: -10%;">
+                    <div class="card-body text-white p-1 rounded" style="background-color:  #003049;">
+                        <p class="pt-3 mb-1"><small>Need more information? Check out our Help Center.</small></p>
+                         <a href="../pages/helpcenter.html" target="_blank" class="btn btn-sm btn-all btn-brand-blue-outline mb-2 mt-0 font-weight-bold">Help Center</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ----------------------sidebar ends--------------- -->
+        <!-- Main Div ------------------------ -->
+        <div id="mainDiv" >
+            <!-- ----------topnav----------------------------------------------------- -->
+            <div class="custom-menu d-flex justify-content-between bg-white px-2"  >
+                <button type="button" id="sidebarCollapse" class="btn btnlink">
+                <i class="fa-solid fa-bars"></i><span class="sr-only">Toggle Menu</span>
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                    <span class="text-nowrap"><small>{logged user's firstname}</small></span>
+                    <img src="../img/girlavatar.png" class="img img-fluid" style="width: 30px;">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Account</button>
+                        <button class="dropdown-item" type="button">Subscription</button>
+                        <button class="dropdown-item" type="button">FAQ</button>
+                        <button class="dropdown-item" type="button">Logout</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------topnav ends---------------------------------- -->
+            <!-- Back to top button -->
+            <button type="button" class="btn btn-lg" id="toTopBtn">
+            <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <!-- ---------------------content------------------------------------------------------ -->
+            <div class="content pt-2 pb-4 px-4">
+
+                    <!-- Welcome Modal -->
+
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-all btn-primary m-2" data-toggle="modal" data-target="#welcomemodal">
+                      Launch welcome modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="welcomemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                                <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                 <h3 class="text-center font-weight-bold" id="exampleModalLongTitle">Welcome to MCQMED</h3>
+                                 <p class="text-center" >Lorem ipsum dolor sit amet consectetur. Odio ut commodo faucibus id commodo congue at. Proin scelerisque risus condimentum ultrices. Consectetur quis gravida ut at neque massa congue. Id sem luctus suspendisse in at odio.</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4><b>Hello Name,</b></h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur. Odio ut commodo faucibus id commodo congue at. Proin scelerisque risus condimentum ultrices. Consectetur quis gravida ut at neque massa congue. Id sem luctus suspendisse in at odio.</p>
+                                        <img src="../img/welcomeimg.png" width="50%" class="img img-fluid">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <form>
+                                          <div class="form-group">
+                                             <label for="profile1"><b>I am <span style="color: #CF0A0A">&#42;</span></b></label>
+                                             <select class="form-control form-control-sm" id="profile1" required>
+                                                <option>An Undergraduate student</option>
+                                                <option>A Graduate student</option>
+                                                <option>A Teacher</option>
+                                                <option>A Doctor</option>
+                                                <option>5</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="profile2"><b>I am preparing for <span style="color: #CF0A0A">&#42;</span></b></label>
+                                             <select class="form-control form-control-sm" id="profile2" required>
+                                                <option>Final MBBS exams</option>
+                                                <option>ERPM exams</option>
+                                                <option>Other</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="profile3"><b>I plan to use MCQMED <span style="color: #CF0A0A">&#42;</span></b></label>
+                                             <select class="form-control form-control-sm" id="profile3" required>
+                                                <option>Every day</option>
+                                                <option>Every 2-3 days</option>
+                                                <option>Once a month</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="profile4"><b>What are your study goals </b></label>
+                                             <textarea  type="text" class="form-control form-control-sm" id="profile4" placeholder="What are your study goals" rows="2"></textarea>
+                                          </div>
+                                          <div class="d-flex justify-content-start">
+                                             <a class="btn btn-sm btn-all btn-brand-blue m-1">Save</a>
+                                             <a class="btn btn-sm btn-all btn-brand-gray m-1" data-dismiss="modal">Close</a>
+                                          </div>
+                                       </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button trigger modal ends-->
+
+
+
+            </div>
+            <!-- content ends -->
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+        <script src="../js/userscript.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(".nav-item .collapse .nav-link").on("click", function(){
+               $(".nav-item").find(".active").removeClass("active");
+               $(this).addClass("active");
+              });
+            
+        </script>
+    </body>
+</html>

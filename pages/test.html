@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Single Blog</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" type="image/svg+xml">
+    <!-- <link rel="manifest" href="../img/favicon/site.webmanifest"> -->
+    <link type="text/css" href='../css/style.css' rel='stylesheet'>
+    <link type="text/css" href='../css/common.css' rel='stylesheet'>
+    
+    <style type="text/css">
+
+
+      /* Theme */
+#reading-progress-fill {
+    -webkit-transition: width 100ms ease;
+    -o-transition: width 100ms ease;
+    transition: width 100ms ease;
+    background-color: #ff0000;
+}
+/* Layout */
+#reading-progress {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#reading-progress-fill {
+    height: 5px;
+    width: 0;
+}
+.blogmenu{
+  background: rgba(85, 117, 134, 0.1) ;
+  color: black;
+  border-radius: 12px;
+
+}
+.blogCTAimage{
+  background: url(../img/transparent-logo.png);
+  background-position-x: left; 
+  background-position-y: top; 
+  background-repeat: no-repeat;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+<!-- Back to top button -->
+<button type="button" class="btn btn-lg" id="toTopBtn">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- ----------------navbar------------------------------------- -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <a class="navbar-brand pl-4" href="../index.html">
+     <img src="../img/logo.png" width="60" height="auto" alt="MCQMED Logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center " id="navbarToggler1">
+    <ul class="navbar-nav m-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="questions.html">Questions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notes.html">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subscription.html">Subscription</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="navbtn">
+       <form class="form-inline my-2 my-lg-0">
+          <a href="login.html" class="btn btn-sm btn-all btn-brand-blue font-weight-bold my-2" type="button">Login</a>
+        </form> 
+    </div>
+    
+  </div>
+</nav>
+<!-- --------------------navbar end------ -->
+
+<!-- ---------------------------body------------------------------- -->
+<div class="container-fluid heroblog mx-0" style="margin-top: 60px;">
+
+
+
+  <!-- ------------------hero---------------------- -->
+  <div class="row p-4 mx-lg-4 mx-xs-2">
+    <div class="col-md-4 text-xl-left text-lg-center align-self-center ">
+       <img src="../img/singleblogcover.png" class="img img-fluid" alt="...">
+    </div>
+    <div class="col-md-8">
+      <h2 class="text-wrap pt-4"> What You Really Need To Know About The ERPM Exam [+ Exam Prep]</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor bibendum porta diam ac odio.</p>
+      <p class="pb-2"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+    </div>
+  </div>
+  <!-- -------------hero end------ -->
+
+
+
+
+
+</div>
+
+
+  <!-- ------------------article---------------------- -->
+<div class="bg-white">
+<div id="reading-progress"><div id="reading-progress-fill"></div></div>
+<div class="container-fluid">
+  <div class="row">
+    <!-- --------------------------------------------------------------------div 1 (column 1)----------------------------------------- -->
+    <!-- --------------------menu------------------------ -->
+    <div class="col-lg-3 col-sm-12 mb-2">
+    <nav class="text-center pb-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column blogmenu mx-auto py-4" >
+        <li class="nav-item py-1">
+          <b>Table of Content</b>
+        </li>
+        <li class="nav-item py-1">
+          <a class="text-reset text-decoration-none" href="#section1">Introduction</a>
+        </li>
+        <li class="nav-item py-1">
+          <a class="text-reset text-decoration-none" href="#section2">ERPM Part A</a>
+        </li>
+        <li class="nav-item py-1">
+          <a class="text-reset text-decoration-none"a href="#section3">ERPM Part B</a>
+        </li>
+         <li class="nav-item py-1">
+          <a class="text-reset text-decoration-none"a href="#section4">ERPM Part C</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- --------------------menu- ends----------------------- -->
+
+    <!-- --------------------CTA ----------------------- -->
+      <div class="card pb-2 my-4 bg-transparent blogCTAimage">
+           <div class="card-body">
+              <h4 class="card-title"><b>All-in-one resource for residents and medical students.</b></h4>
+               <!-- you don't have to wrap card with <a> tag, but instead put it inside card-body, and use stretched-link class -->
+                <div class="text-center">
+                  <a href="subscription.html" class="btn btn-sm btn-all btn-brand-blue font-weight-bold my-2" >Sign up today</a>
+                </div>
+            </div>
+        </div>
+
+        
+    <!-- --------------------CTA ends----------------------- -->
+
+
+   </div>
+   <!-- --------------------------------------------------------------------div 2 (column 2)----------------------------------------- -->
+    <!-- ----------------------------blog content_-------------------------- -->
+    <div class="col-lg-6 col-sm-12 justify-content-md-center">
+      <!-- -----------------------blogpost-------------------------------------- -->
+      <div id="section1" class="py-2">    
+        <h3><b>ERPM? Huh?</b></h3>
+        <p>Hours of studying, countless sleepless nights, a thousand and one things to study and five long years of toiling away in med school as you prepare to face the dreaded ERPM exam - no pressure right? <br/> <br/>
+
+        <b>But what exactly is the ERPM exam? </b>Why sit for it? Is it as hard as they say it is and how do we prepare for it?<br/><br/>
+
+        <b>The ERPM exam -</b> more commonly referred to as the nightmare that awaits all innocent foreign med students - is a compulsory exam that anyone who wishes to practice medical care in Sri Lanka needs to sit for. It’s broken down into four sections - the theory examination, clinical examination, oral examination and community medicine and forensics medicine - all of which are focused on the core ERPM subjects. Technically, the ERPM is designed to assess your ability to approach medical practice with the necessary skills or clinical reasoning, intellectual inquiry and decision making and checks your understanding and knowledge of clinical subjects with special focus on medical related issues prevalent in Sri Lanka.<br/><br/>
+
+        Phew! Stressed? Don’t be. We’re going to take this one step at a time!</p>
+      </div>
+      <div id="section2" class="py-2"> 
+        <h3><b>ERPM Part A - Theory Examination</b></h3>
+        <p>Theory examination - Medicine, Paediatrics, Surgery, Psychology and Gynecology & Obstetrics<br/><br/>
+
+        The theory examination consists of two types of questions<br/><br/>
+
+        True/False MCQs which tests the candidates’ core knowledge <br/>
+        Single Best Answer (SBA) questions that assess the candidates’ ability to handle and solve basic clinical problems and analyze and understand laboratory results</p>
+        <img src="../img/partA.png" class="img img-fluid mx-auto d-block my-2">
+      </div>        
+      <div id="section3" class="py-2" >         
+        <h3><b>ERPM Part B - Clinical Examination</b></h3>
+        <p>The clinical component has 4 subjects with 2 stations per subject<br/><br/>
+
+        Track 1: Medical Track       </p>
+        <ul style="list-style-type: none;">
+          <li>Medicine
+            <ul class="py-2">
+              <li>Station 1 - Medical Consultation (20 mins)</li>
+              <li>Station 2 - Medical System Examination : 2 short cases (20 mins)</li>
+            </ul>
+          </li>
+          <li>Paediatrics
+            <ul class="py-2">
+              <li>Station 3 - Paediatric Consultation (20 mins)</li>
+              <li>Station 4 - Paediatric System Examination : 2 short cases (20 mins)</li>
+            </ul>
+          </li>
+        </ul>
+       <img src="../img/PartBMedical.png" class="img img-fluid mx-auto d-block my-2">
+        <p>Track 2: Surgical Track </p>
+        <ul style="list-style-type: none;">
+          <li>Surgery
+            <ul class="py-2">
+              <li>Station 5 - Surgical Consultation (20 mins)</li>
+              <li>Station 6 - Surgical Spots : 3 short cases (20 mins)</li>
+            </ul>
+          </li>
+          <li>Gynecology and Obstetrics
+            <ul class="py-2">
+              <li>Station 7 - Gynecology Consultation and Examination (20 mins)</li>
+              <li>Station 8 - Obstetric Consultation and Examination (20 mins)</li>
+            </ul>
+          </li>
+        </ul>
+        <img src="../img/PartBSurgical.png" class="img img-fluid mx-auto d-block my-2">
+      </div>
+      <div id="section4" class="py-2" >         
+        <h3><b>ERPM Part C</b></h3>
+        <p>The ERPM exam - more commonly referred to as the nightmare that awaits all innocent foreign med students - is a compulsory exam that anyone who wishes to practice medical care in Sri Lanka needs to sit for. It’s broken down into four sections - the theory examination, clinical examination, oral examination and community medicine and forensics medicine - all of which are focused on the core ERPM subjects. Technically, the ERPM is designed to assess your ability to approach medical practice with the necessary skills or clinical reasoning, intellectual inquiry and decision making and checks your understanding and knowledge of clinical subjects with special focus on medical related issues prevalent in Sri Lanka.!</p>
+      </div>   
+
+      <!-- --------------------sharable links_------------------------------------ -->
+      <div class="d-flex align-items-center">
+         <h5 class="pr-4">Share this post! </h5>
+        <div class="d-flex justify-content-center flex-wrap">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=www.mcqmed.lk/post/erpm-structure" target="_blank" data-toggle="tooltip" title="Share on facebook!" class="social social-blue p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com/intent/tweet?url=www.mcqmed.lk/post/erpm-structure&text=" target="_blank" data-toggle="tooltip" title="Share on twitter!" class="social social-blue p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+
+        <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Share on instagram!" class="social social-blue p-2"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=www.mcqmed.lk/post/erpm-structure" target="_blank" data-toggle="tooltip" title="Share on LinkedIn!" class="social social-blue p-2"><i class="fab fa-linkedin-in"></i></a>
+
+        <a href="mailto:info@example.com?&subject=&cc=&bcc=&body=www.mcqmed.lk/post/erpm-structure%0A" target="_blank" data-toggle="tooltip" title="Share on Email!" class="social social-blue p-2"><i class="fas fa-envelope"></i></a>
+
+       </div>
+      </div>
+     
+<!-- 
+      https://www.websiteplanet.com/webtools/sharelink/
+
+       Linkedin:
+
+      https://www.linkedin.com/shareArticle?mini=true&url=[URL]&title=[TITLE]&source=[SOURCE/DOMAIN]
+
+      Facebook:
+
+      https://www.facebook.com/share.php?u=[URL]&title=[TITLE]
+
+      Twitter:
+
+      https://twitter.com/home/?status=[TITLE][URL]
+
+      Email:
+
+      email:?subject=[TITLE]&body=Checkout the update on [URL] 
+
+
+    https://blog.sagipl.com/how-to-create-social-sharing-links-without-any-tool/-->
+                
+
+
+      <!-- -----------------------rate and print------------------------------------ -->
+      <div class="d-flex align-items-center py-4">
+        <div class="w-100 px-2">
+          <a href="javascript:window.print()" rel="nofollow"><button type="button" class="w-100 btn btn-all btn-brand-blue font-weight-bold my-2"><i class="fas fa-print"></i> Print this Article</button></a>
+        </div>
+        <div class="w-100 px-2">
+          <a href="../pages/payment.html" type="text/html"><button type="button" class="w-100 btn btn-all btn-warning font-weight-bold my-2"><i class="fas fa-star"></i> Rate this Article</button></a>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- --------------------------------------------------------------------div 3 (column 3)----------------------------------------- -->
+    <!-- ---------------------other blgs---------------------------- -->
+    <div class="col-lg-3 col-sm-12">
+       <div class="card pb-2 mb-2 bg-transparent">
+          <img src="../img/blog1.png" class="card-img-top blogimg" alt="...">
+           <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a card.</p>
+              <div class="flexible"></div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+               <!-- you don't have to wrap card with <a> tag, but instead put it inside card-body, and use stretched-link class -->
+              <a href="test.html" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="card pb-2 mb-2 bg-transparent">
+          <img src="../img/blog1.png" class="card-img-top blogimg" alt="...">
+           <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a card.</p>
+              <div class="flexible"></div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+               <!-- you don't have to wrap card with <a> tag, but instead put it inside card-body, and use stretched-link class -->
+              <a href="test.html" class="stretched-link"></a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+
+<!-- ---------------------------footer----------------------------------- -->
+<div class="footer text-white">
+  <div class="row justify-content-center">
+      <div class="col-lg pb-3 text-lg-left text-md-center">
+          <h4><b>About Us</b></h4>
+          <p>MCQMED.LK is an unrivalled, powerful and updated question bank of thousands of questions to help you ace your MCQ papers.</p>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Like us on facebook!" class="social social-blue p-2"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on twitter!" class="social social-blue p-2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/mcqmedlk/" target="_blank" data-toggle="tooltip" title="Follow us on instagram!" class="social social-blue p-2"><i class="fa-brands fa-instagram" target="_blank" aria-hidden="true"></i></a>
+              <a href="https://www.tiktok.com/@mcqmedlk" target="_blank" data-toggle="tooltip" title="Follow us on tiktok!" class="social social-blue p-2"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            </div>
+          
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+        <h4><b>Company</b></h4>
+          <p class="p-2"><a href="index.html">Home</a></p>
+          <p class="p-2"><a href="questions.html">Questions</a></p>
+          <p class="p-2"><a href="notes.html">Notes</a></p>
+          <p class="p-2"><a href="about.html">About us</a></p>
+          <p class="p-2"><a href="contact.html">Contact us</a></p>
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Members</b></h4>
+          <p class="p-2"><a href="login.html">Login</a></p>
+          <p class="p-2"><a href="signup.html">Sign up</a></p>
+          <p class="p-2"><a href="subscription.html">Subscription</a></p>
+
+      </div>
+      <div class="col-lg pb-3 text-lg-left text-md-center ">
+          <h4><b>Information</b></h4>
+          <p class="p-2"><a href="blog.html">Blog</a></p>
+          <p class="p-2"><a href="faq.html">FAQ</a></p>
+          <p class="p-2"><a href="helpcenter.html">Help Center</a></p>
+          <p class="p-2"><a href="privacy.html">Privacy and Policy</a></p>
+          <p class="p-2"><a href="terms.html">Terms and conditions</a></p>
+
+      </div>
+
+  </div>
+</div>
+<div class="copyright">
+    <p class="text-lg-left text-sm-center small text-white">@ MCQMED.LK 2022. AllRight Reserved</p>
+</div>
+<!-- -----------------------footer  end------------------------------- -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+
+<script src="../js/script.js"></script>
+<script type="text/javascript">
+
+  jQuery(window).scroll((function() {
+  let w = (document.body.scrollTop || document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+  jQuery("#reading-progress-fill").css({width: w + "%"})
+}));
+</script>
+
+</body>
+
+</html>

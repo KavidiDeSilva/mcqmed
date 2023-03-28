@@ -1,0 +1,2 @@
+ErrorDocument 404 /mcqmed/pages/404.html
+ErrorDocument 500 /mcqmed/pages/500.html
